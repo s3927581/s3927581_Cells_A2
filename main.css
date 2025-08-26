@@ -1,0 +1,328 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  background: #FFFFFF; /* nền trắng */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* VIEWPORT: chiếm toàn màn & chỉ cuộn ngang */
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* KHUNG GỐC 1920×1080 */
+.v1_2 {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background: #FFFFFF; /* trắng */
+  transform-origin: top left; /* để scale JS */
+}
+
+/* ================== BACKGROUND ================== */
+.v1_3 {
+  position: absolute;
+  width: 23272px;
+  height: 1080px;
+  left: calc(50% - 23272px / 2 + 10676px);
+  top: calc(50% - 1080px / 2);
+  background: '#FFFFFF'; /* nền trắng */
+}
+
+.v1_4 {
+  /* nếu cần layer gradient đặt thêm tại đây */
+}
+
+/* ================== TYPOGRAPHY ================== */
+.v1_5 {
+  position: absolute;
+  left: 501px;
+  bottom: 184px;
+  width: 9241px;
+  height: 386px;
+  font: 700 400px/480px "Lato", sans-serif; /* đã đậm */
+  color: #000;
+  white-space: pre-line;
+}
+
+.v1_6 {
+  position: absolute;
+  bottom: 660px;
+  left: calc(20% - 1070px / 2 + 9583.5px);
+  width: 1070px;
+  color: #0A082D;
+
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.08em;
+}
+
+.v1_7 {
+  position: absolute;
+  left: 14441px;
+  top: -358px;
+  width: 1920px;
+  height: 2456px;
+  background: url("v1_7.png") center/cover no-repeat;
+}
+
+.v1_8 {
+  position: absolute;
+  bottom: 340px;
+  left: calc(50% - 664px / 2 + 13118px);
+  width: 664px;
+  height: 211px;
+  font: 400 24px/155% "Domine", serif;
+  letter-spacing: 0.08em;
+  color: #000;
+  white-space: pre-line;
+}
+
+.v1_9 {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  width: 1800px;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 400 600px/840px "Domine", serif;
+  color: rgba(0, 0, 0, 0.02);
+}
+
+.v1_10 {
+  position: absolute;
+  bottom: 609px;
+  left: calc(50% - 208px / 2 + 12891px);
+  width: 208px;
+  font: 400 20px/140% "Lato", sans-serif; /* tăng weight: 200 → 600 */
+  letter-spacing: 0.08em;
+  color: #0A082D;
+}
+
+/* LINES */
+.v1_11 {
+  position: absolute;
+  left: 74px;
+  top: 500px;
+  width: 21253px;
+  height: 0.001;
+}
+.v1_11 .name:first-child {
+  position: absolute;
+  left: 0;
+  width: 14336px;
+  border-top: 1px solid #000;
+}
+.v1_11 .name:last-child {
+  position: absolute;
+  left: 16381px;
+  width: 4946px;
+  border-top: 1px solid #000;
+}
+
+/* CALL TO ACTION */
+.Action_call{
+  position: absolute;
+  bottom: 227px;
+  left: calc(50% - 1801px / 2 + 17539.5px);
+  width: 1801px;
+  font: 400 64px/140% "Lato", sans-serif;
+  letter-spacing: 0.08em;
+  white-space: pre-line;
+  color: #242B44;
+  font-family: Lato;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 89.6px */
+  letter-spacing: -1.92px;
+}
+
+/* LONG PARAGRAPH */
+.v1_16 {
+  position: absolute;
+  bottom: 640px;
+  left: calc(50% - 890px / 2 + 17995px);
+  width: 810px;
+  font: 500 18px/120% "Lato", sans-serif; /* tăng weight: 200 → 500 */
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.69);
+  white-space: pre-line;
+}
+
+/* ===== khung chứa sketch p5.js ===== */
+.sketch{
+  position:absolute;
+  width:1920px;
+  height:1080px;
+  left:calc(50% - 1920px/2 + 21352px);
+  top:calc(50% - 1080px/2);
+  background:none; /* không che canvas */
+  z-index:2;
+}
+
+/* GOAL 16 WATERMARK */
+.v1_18 {
+  position: absolute;
+  bottom: 90px;
+  left: 9700px;
+  width: 1610px;
+  height: 480px;
+  font: 400 400px/480px "Domine", serif;
+  color: rgba(52, 58, 80, 0.05);
+}
+
+/* ================== FOOTER / HEADER BLOCK ================== */
+.v1_19 {
+  position: absolute;
+  left: 59px;
+  top: 43px;
+  width: 1674px;
+  height: 1022px;
+  color: #343A51;
+}
+
+.v1_20 {
+  /* RMIT address */
+  position: absolute;
+  left: 60px;
+  bottom: 15px;
+  width: 400px;
+  font: 600 14px/140% "Lato", sans-serif; /* 400 → 600 */
+  letter-spacing: 0.08em;
+  color: #343A51;
+}
+
+.v1_21 {
+  position: absolute;
+  width: 207px;
+  height: 40px;
+  left: 59px;
+  bottom: 995px;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 600; /* 400 → 600 */
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.08em;
+  color: #343A51;
+}
+
+.v1_23 {
+  position: absolute;
+  left: 515px;
+  bottom: 974px;
+  width: 76px;
+  font: 600 14px/140% "Lato", sans-serif; /* 400 → 600 */
+  letter-spacing: 0.08em;
+  color: #343A51;
+  white-space: pre-line;
+}
+
+.v1_24 {
+  position: absolute;
+  width: 59px;
+  height: 22px;
+  left: 515px;
+  bottom: 1015px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600; /* 400 → 600 */
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.08em;
+  color: #343A51;
+}
+
+.v1_25 {
+  position: absolute;
+  left: 592px;
+  bottom: 974px;
+  width: 235px;
+  font: 600 14px/140% "Lato", sans-serif; /* 400 → 600 */
+  letter-spacing: 0.08em;
+  color: #343A51;
+  white-space: pre-line;
+}
+
+.v1_26 {
+  position: absolute;
+  left: 1425px;
+  bottom: 15px;
+  width: 310px;
+  font: 600 14px/140% "Lato", sans-serif; /* 400 → 600 */
+  letter-spacing: 0.08em;
+  color: #343A51;
+}
+
+.v1_27 {
+  position: absolute;
+  width: 238px;
+  height: 80px;
+  left: 1197px;
+  bottom: 955px;
+  font-family:"Lato";
+  font-style: normal;
+  font-weight: 600; /* 400 → 600 */
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.08em;
+  color: #343A51;
+}
+
+.v1_28 {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  left: 1653px;
+  bottom: 1015px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600; /* 400 → 600 */
+  font-size: 14px;
+  line-height: 140%; /* or 20px */
+  letter-spacing: 0.08em;
+  color: #343A51;
+}
+
+/* ... RESET, .viewport, .v1_2, các class khác giữ nguyên ... */
+
+/* ===== ẨN SCROLLBAR CHO VIEWPORT ===== */
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /* ẩn mọi loại scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+.viewport::-webkit-scrollbar {
+  display: none;
+} /* Chrome/Safari */
+
+/* ===== KHỐI .v1_19 BÂY GIỜ LÀ position:fixed ===== */
+.v1_19 {
+  position: fixed; /* giữ nguyên vị trí khi scroll */
+  left: 59px;
+  top: 43px; /* toạ độ gốc thiết kế */
+  width: 1674px;
+  height: 1022px;
+
+  transform-origin: top left; /* để JS scale giống v1_2 */
+  pointer-events: none; /* click xuyên qua (tuỳ thích) */
+}
+/* (mọi span con .v1_20 ~ .v1_28 giữ nguyên định dạng đã có) */
